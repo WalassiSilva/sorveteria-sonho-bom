@@ -35,9 +35,9 @@ menu.addEventListener("click", (event) => {
   if (parentBtn) {
     const name = parentBtn.getAttribute("data-name");
     const price = parseFloat(parentBtn.getAttribute("data-price"));
-
     addToCart(name, price);
   }
+
 });
 
 function addToCart(name, price) {
@@ -129,7 +129,7 @@ address.addEventListener("input", (event) => {
 checkoutBtn.addEventListener("click", () => {
   const isOpen = checkRestaurantAvailability();
 
-  if(!isOpen) {
+  if (!isOpen) {
     Toastify({
       text: "O restaurate está fechado!",
       duaration: 3000,
@@ -155,16 +155,17 @@ checkoutBtn.addEventListener("click", () => {
 
   const cartItems = cart.map((item) => {
     return (
-      `${item.name} Quantidade: (${item.quantity}) Preço R$${item.price} | `
+      `${item.name} Quantidade: (${item.quantity}) Preço R$${item.price} \n `
     )
   }).join("");
 
   const message = encodeURIComponent(cartItems);
-  const phone = "31986482092"; 
+  const phone = "31986482092";
 
-  window.open(`https://wa.me/${phone}?text=${message} Endereço: ${address.value}`, "_blank");
+  window.open(`https://wa.me/${phone}?text=${message} Endereço: ${address.value} Total: ${cartTotal.textContent}`, "_blank");
 
   cart = [];
+  address.value = "";
   updateCartModal();
 });
 
@@ -172,15 +173,16 @@ function checkRestaurantAvailability() {
   const data = new Date();
   const hour = data.getHours();
   return hour >= 18;
+  return true;
 }
 
 const workingHours = document.getElementById("date-span");
 const isOpen = checkRestaurantAvailability();
 
-if(isOpen) {
+if (isOpen) {
   workingHours.classList.remove("bg-red-500");
   workingHours.classList.add("bg-green-500");
-}else {
+} else {
   workingHours.classList.remove("bg-green-500");
   workingHours.classList.add("bg-red-500");
 }

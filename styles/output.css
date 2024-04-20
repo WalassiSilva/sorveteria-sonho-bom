@@ -2679,7 +2679,7 @@ video {
 }
 
 body {
-  background-color: rgb(194, 189, 189);
+  background-color: rgb(237, 243, 230);
 }
 
 @media (min-width: 640px) {
@@ -2754,6 +2754,11 @@ body {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.active\:-rotate-2:active {
+  --tw-rotate: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px) {
