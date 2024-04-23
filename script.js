@@ -9,6 +9,7 @@ const address = document.getElementById("address");
 const addressError = document.getElementById("address-error");
 const cartCounter = document.getElementById("cart-count");
 
+
 let cart = [];
 
 // Abrir modal 
@@ -173,7 +174,6 @@ function checkRestaurantAvailability() {
   const data = new Date();
   const hour = data.getHours();
   return hour >= 18;
-  return true;
 }
 
 const workingHours = document.getElementById("date-span");

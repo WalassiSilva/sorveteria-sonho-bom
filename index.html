@@ -40,7 +40,7 @@
 
   <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Menu</h2>
   <div id="menu">
-    <main class="grid grid-cols-1 md:grid-cols-2 md-gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16">
+    <main class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16">
 
       <div class="flex gap-2">
         <img src="./assets/hamb-1.png" alt="Completo"
@@ -52,7 +52,13 @@
 
           <div class="flex items-center justify-between mt-3">
             <p class="font-bold text-lg">R$ 22.90</p>
-            <button class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110" data-name="Completo" data-price="22.90">
+            <button 
+               class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110 "
+             
+              data-name="Completo" 
+              data-price="22.90" 
+              data-qtde={0}
+            >
               <i class="fa fa-cart-plus text-white"></i>
             </button>
           </div>
@@ -163,7 +169,7 @@
 
       <p class="font-bold">Total: <span id="cart-total">R$0.00</span></p>
 
-      <p class="font-bold mt-4">Endereço de entraga</p>
+      <p class="font-bold mt-4">Endereço de entrega</p>
       <input type="text" id="address" placeholder="Digite seu endereço" class="w-full border-2 p-1 rounded my-1">
 
       <p id="address-error" class="text-red-500 hidden">Seu endereço completo</p>
