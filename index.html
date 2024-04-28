@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="./styles/output.css" />
 </head>
 
-<body>
+<body class="relative">
   <!-- HEADER -->
   <header class="w-full  h-[420px] bg-zinc-900 bg-home bg-center bg-contain">
     <div class="w-full h-full flex flex-col justify-center items-center">
@@ -108,14 +108,41 @@
   </div>
 
   <!-- FOOTER -->
-  <section class="w-full flex items-center justify-center py-3 fixed bottom-0 z-40 bg-red-500 ">
-    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-      (<span id="cart-count">0</span>)
-      Meu carrinho
-      <i class="fa fa-cart-plus text-lg text-white"></i>
-    </button>
+  <section class="fixed right-5 top-5 ">
+    <div class="flex items-center justify-center p-5 z-40 bg-purple-900 rounded-l-full rounded-br-full ">
+
+      <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+        <span id="cart-count"> 0 </span>
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </div>
   </section>
 
+  <footer>
+    <div class="bg-zinc-100 text-[#424242] p-2 text-center font-semibold">
+      <a href="https://www.instagram.com/sorvetes_sonho_bom?utm_source=qr&igsh=MTA4bTlqNzdlY3h5eQ%3D%3D"
+        target="_blank">
+        <i class="fa-brands fa-instagram"> Sonho Bom</i>
+      </a>
+
+      <ul class="flex gap-2 items-center justify-center ">
+        <li>
+          <a href="https://github.com/WalassiSilva" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/walassi-silva" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <span>Copyright © 2024 - <a class="underline" href="https://www.linkedin.com/in/walassi-silva"
+          target="_blank">WalassiSilva</a></span>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/b37d4209d7.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="./script.js"></script>
 
