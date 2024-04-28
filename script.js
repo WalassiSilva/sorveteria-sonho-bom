@@ -119,7 +119,7 @@ fetch("data.json").then((response) => {
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
         <p class="font-bold lg:text-xl text-md md:font-xl ">${item.name}</p>
         <img src=${item.image} alt=${item.name}
-          class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 hover:rounded-full duration-300" />
+          class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2  duration-300" />
 
         <div class="h-full flex flex-col justify-between ">
 
