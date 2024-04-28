@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dev Burger - Cardapio</title>
+  <title>Sorvetes Sonho Bom</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -16,166 +16,90 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Dev Burger - O melhor Hamburger da matrix!" />
+  <meta property="og:title" content="Sorvetes Sonho Bom - Delicias geladas e doces!" />
   <meta property="og:img" content="https://devburger-cardapio.vercel.app/assets/logo.png" />
-  <meta property="og:description" content="O melhor Hamburger da matrix!" />
-  <meta property="og:site_name" content="DevBurger" />
+  <meta property="og:description" content="O melhor dos sovetes caseiros" />
+  <meta property="og:site_name" content="Sorveteria Sonho Bom" />
   <link rel="stylesheet" href="./styles/output.css" />
 </head>
 
 <body>
   <!-- HEADER -->
-  <header class="w-full  h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+  <header class="w-full  h-[420px] bg-zinc-900 bg-home bg-center bg-contain">
     <div class="w-full h-full flex flex-col justify-center items-center">
-      <img src="./assets/logo.png" alt="Logo DevBunger"
+      <img src="./assets/sorvete-neon.jpg" alt="Logo DevBunger"
         class=" w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
-      <h1 class="text-white text-4xl mt-4 mb-2 font-bold">DevBurger</h1>
-      <span class="text-white">Rua Lorem ipsun 19, Belo Horizote - MG</span>
+      <h1 class="text-pink-600 bg-white/30 rounded-lg px-4 py-2 text-4xl mt-4 mb-2 font-bold text-center">Sorvetes Sonho
+        Bom</h1>
+      <span class="text-pink-600 font-bold bg-white/30 rounded-lg px-4 py-2">Rua um, 164 - Serra Azul</span>
 
       <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-        <span class="text-white font-medium">Seg a Dom 18:00 às 00:00</span>
+        <span class="text-white font-medium">Seg a Dom 08:00 às 20:00</span>
       </div>
     </div>
   </header>
 
-  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Menu</h2>
   <div id="menu">
-    <main class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16">
 
-      <div class="flex gap-2">
-        <img src="./assets/hamb-1.png" alt="Completo"
-          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-
-        <div class="flex-1">
-          <p class="font-bold">Completo</p>
-          <p class="text-sm">Pão caseiro, 2 carnes de 60g, 2 queijos, bacon, maionese, alface e tomate</p>
-
-          <div class="flex items-center justify-between mt-3">
-            <p class="font-bold text-lg">R$ 22.90</p>
-            <button 
-               class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110 "
-             
-              data-name="Completo" 
-              data-price="22.90" 
-              data-qtde={0}
-            >
-              <i class="fa fa-cart-plus text-white"></i>
-            </button>
-          </div>
-        </div>
+    <!-- PICOLES COBERTURA -->
+    <section>
+      <div class="bg-picole-cobertura w-full">
+        <h2 class="text-2xl md:text-3xl font-bold text-center pt-9 pb-2">Picolés de Cobertura</h2>
+        <h3 class="text-xl md:text-2xl font-bold text-center pb-6">R$ 2,75</h3>
       </div>
-
-      <div class="flex gap-2">
-        <img src="./assets/hamb-2.png" alt="Capricho"
-          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-
-        <div class="flex-1">
-          <p class="font-bold">Capricho</p>
-          <p class="text-sm">Pão caseiro, 2 carnes de 100g, muito queijo, bacon, maionese</p>
-
-          <div class="flex items-center justify-between mt-3">
-            <p class="font-bold text-lg">R$ 26.90</p>
-            <button class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110" data-name="Capricho" data-price="26.90">
-              <i class="fa fa-cart-plus text-white"></i>
-            </button>
-          </div>
-        </div>
+      <div id="covers-section"
+        class="bg-picole-cobertura grid grid-cols-2 md:grid-cols-4 md:gap-10 lg:grid-cols-5 gap-7  px-2 pb-16"></div>
+    </section>
+    <!-- PICOLES ESPECIAIS -->
+    <section>
+      <div class="bg-picole-cobertura w-full">
+        <h2 class="text-2xl md:text-3xl font-bold text-center pt-9 pb-2">Picolés Especiais</h2>
+        <h3 class="text-xl md:text-2xl font-bold text-center pb-6">R$ 1,25</h3>
       </div>
+      <div id="special-section"
+        class="bg-picole-cobertura grid grid-cols-2 md:grid-cols-4 md:gap-10 lg:grid-cols-5 gap-7  px-2 pb-16"></div>
+    </section>
 
-      <div class="flex gap-2">
-        <img src="./assets/hamb-8.png" alt="Vegetariano"
-          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-
-        <div class="flex-1">
-          <p class="font-bold">Vegetariano</p>
-          <p class="text-sm">Pão caseiro, salada, salada, salada, e hamburger de planta</p>
-
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 25.90</p>
-            <button class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110" data-name="Vegetariano" data-price="25.90">
-              <i class="fa fa-cart-plus text-white"></i>
-            </button>
-          </div>
-        </div>
+    <!-- PICOLES A BASE DE AGUA -->
+    <section>
+      <div class="bg-picole-cobertura w-full">
+        <h2 class="text-2xl md:text-3xl font-bold text-center pt-9 pb-2">Picolés a base de água</h2>
+        <h3 class="text-xl md:text-2xl font-bold text-center pb-6">R$ 1,25</h3>
       </div>
+      <div id="water-base-section"
+        class="bg-picole-cobertura grid grid-cols-2 md:grid-cols-4 md:gap-10 lg:grid-cols-5 gap-7  px-2 pb-16"></div>
+    </section>
 
-      <div class="flex gap-2">
-        <img src="./assets/hamb-3.png" alt="Simples"
-          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-        <div class="flex-1">
-          <p class="font-bold">Simples</p>
-          <p class="text-sm">Pão caseiro, 2 carnes de hamburger, 2 queijos e maionese</p>
 
-          <div class="flex items-center justify-between mt-3">
-            <p class="font-bold text-lg">R$ 20.90</p>
-            <button class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110" data-name="Vegetariano" data-price="20.90">
-              <i class="fa fa-cart-plus text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div class="mx-auto max-w-7xl px-2 my-2">
-      <h2 class="font-bold text-3xl">Bebidas</h2>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 md-gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16" id="menu">
-
-      <!-- PRODUTO ITEM -->
-      <div class="flex-gap-2 flex w-full">
-        <img src="./assets/refri-1.png" alt="Coca cola"
-          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-
-        <div class="w-full">
-          <p class="font-bold text-lg">Coca cola</p>
-
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$5.50</p>
-
-            <button class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110" data-name="coca lata" data-price="5.50">
-              <i class="fa fa-cart-plus text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-gap-2 flex w-full">
-        <img src="./assets/refri-2.png" alt="Coca cola"
-          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-
-        <div class="w-full">
-          <p class="font-bold text-lg">Guanara lata</p>
-
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$5.50</p>
-
-            <button class="bg-gray-900 px-5 rounded btn-add-to-cart active:-rotate-2 duration-300 hover:scale-110" data-name="guarana lata" data-price="5.50">
-              <i class="fa fa-cart-plus text-white"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
+  </div>
 
   </div>
 
   <!-- MODAL -->
   <div id="cart-modal" class="bg-black/70 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
-    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-      <h2 class="text-center folt-bold text-2xl mb-2 ">meu carrinho</h2>
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px] max-h-[70%] overflow-scroll">
+      <h2 class="text-center folt-bold text-2xl mb-2 ">Meu Carrinho</h2>
 
-      <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+      <div id="cart-items" class="flex justify-between mb-2 flex-col border shadow-md p-2"></div>
 
       <p class="font-bold">Total: <span id="cart-total">R$0.00</span></p>
 
-      <p class="font-bold mt-4">Endereço de entrega</p>
-      <input type="text" id="address" placeholder="Digite seu endereço" class="w-full border-2 p-1 rounded my-1">
+      <p class="font-bold mt-4">Nome do cliente</p>
+      <input type="text" id="customer-name" placeholder="Digite seu nome" class="w-full border-2 p-1 rounded my-1">
+      <p class="font-bold mt-4">Forma de payment</p>
+
+      <select name="payment" id="payment">
+        <option value="Pix">Pix</option>
+        <option value="Dinheiro">Dinheiro</option>
+        <option value="Cartão de Debito">Cartão de Debito</option>
+        <option value="Cartão de Crédito">Cartão de Crédito</option>
+      </select>
 
       <p id="address-error" class="text-red-500 hidden">Seu endereço completo</p>
 
       <div class="flex items-center justify-between mt-4 w-full">
-        <button id="btn-close-modal">Fechar</button>
+        <button id="btn-close-modal" class="bg-red-500 text-white px-4 py-1 rounded hover:bg-red-600">Fechar</button>
         <button id="btn-checkout" class="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Finalizar
           pedido</button>
       </div>
@@ -187,7 +111,7 @@
   <footer class="w-full flex items-center justify-center py-3 fixed bottom-0 z-40 bg-red-500 ">
     <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
       (<span id="cart-count">0</span>)
-      Veja meu carrinho
+      Meu carrinho
       <i class="fa fa-cart-plus text-lg text-white"></i>
     </button>
   </footer>

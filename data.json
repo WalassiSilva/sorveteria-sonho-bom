@@ -1,0 +1,242 @@
+{
+  "covers": [
+    { 
+      "id": 1,
+      "name": "Bombom",
+      "price": 2.75,
+      "image": "./assets/popsicles/bombom.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Brigadeiro",
+      "price": 2.75,
+      "image": "./assets/popsicles/brigadeiro.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Crocante",
+      "price": 2.75,
+      "image": "./assets/popsicles/crocante.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Skimó Côco",
+      "price": 2.75,
+      "image": "./assets/popsicles/skimo.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Tentação",
+      "price": 2.75,
+      "image": "./assets/popsicles/tentacao.jpeg"
+    }
+  ],
+  "water_bases": [
+    {
+      "id": 1,
+      "name": "Abacaxi",
+      "price": 1.25,
+      "image": "./assets/popsicles/abacaxi.png"
+    },
+    {
+      "id": 2,
+      "name": "Limão",
+      "price": 1.25,
+      "image": "./assets/popsicles/limao.png"
+    },
+    {
+      "id": 3,
+      "name": "Uva",
+      "price": 1.25,
+      "image": "./assets/popsicles/uva.png"
+    }
+  ], 
+  "specials": [
+    {
+      "id": 1,
+      "name": "Abacate",
+      "price": 1.25,
+      "image": "./assets/popsicles/abacate.png"
+    },
+    {
+      "id": 2,
+      "name": "Abacaxi Suíço",
+      "price": 1.25,
+      "image": "./assets/popsicles/abacaxi-suico.png"
+    },
+    { 
+      "id": 3,
+      "name": "Açaí",
+      "price": 1.25,
+      "image": "./assets/popsicles/acai.png"
+    },
+    {
+      "id": 4,
+      "name": "Acerola",
+      "price": 1.25,
+      "image": "./assets/popsicles/acerola.png"
+    },
+    {
+      "id": 5,
+      "name": "Amendoim",
+      "price": 1.25,
+      "image": "./assets/popsicles/amendoim.png"
+    },
+    {
+      "id": 6,
+      "name": "Banana",
+      "price": 1.25,
+      "image": "./assets/popsicles/banana.png"
+    },
+    {
+      "id": 7,
+      "name": "Beijeinho",
+      "price": 1.25,
+      "image": "./assets/popsicles/beijinho.png"
+    },
+    {
+      "id": 8,
+      "name": "Chiclete",
+      "price": 1.25,
+      "image": "./assets/popsicles/chiclete.png"
+    },
+    {
+      "id": 9,
+      "name": "Chocolate",
+      "price": 1.25,
+      "image": "./assets/popsicles/chocolate.png"
+    },
+    {
+      "id": 10,
+      "name": "Chocolate Branco",
+      "price": 1.25,
+      "image": "./assets/popsicles/chocolate-branco.png"
+    },
+    {
+      "id": 11,
+      "name": "Chocomenta",
+      "price": 1.25,
+      "image": "./assets/popsicles/chocomenta.png"
+    },
+    {
+      "id": 12,
+      "name": "Coco",
+      "price": 1.25,
+      "image": "./assets/popsicles/coco.png"
+    },
+    {
+      "id": 13,
+      "name": "Coco com Abacaxi",
+      "price": 1.25,
+      "image": "./assets/popsicles/coco-abacaxi.png"
+    },
+    {
+      "id": 14,
+      "name": "Coco Queimado",
+      "price": 1.25,
+      "image": "./assets/popsicles/coco-queimado.png"
+    },
+    {
+      "id": 15,
+      "name": "Creme",
+      "price": 1.25,
+      "image": "./assets/popsicles/creme.png"
+    },
+    {
+      "id": 16,
+      "name": "Flocos",
+      "price": 1.25,
+      "image": "./assets/popsicles/flocos.png"
+    },
+    {
+      "id": 17,
+      "name": "Goiaba",
+      "price": 1.25,
+      "image": "./assets/popsicles/goiaba.png"
+    },
+    {
+      "id": 18,
+      "name": "Graviola",
+      "price": 1.25,
+      "image": "./assets/popsicles/graviola.png"
+    },
+    {
+      "id": 19,
+      "name": "Jabuticaba",
+      "price": 1.25,
+      "image": "./assets/popsicles/jabuticaba.png"
+    },
+    {
+      "id": 20,
+      "name": "Kiwi",
+      "price": 1.25,
+      "image": "./assets/popsicles/kiwi.png"
+    },
+    {
+      "id": 21,
+      "name": "Leite Condensado",
+      "price": 1.25,
+      "image": "./assets/popsicles/leite-condensado.png"
+    },
+    {
+      "id": 22,
+      "name": "Limão Suíço",
+      "price": 1.25,
+      "image": "./assets/popsicles/limao-suico.png"
+    },
+    {
+      "id": 23,
+      "name": "Manga",
+      "price": 1.25,
+      "image": "./assets/popsicles/manga.png"
+    },
+    {
+      "id": 24,
+      "name": "Maracujá",
+      "price": 1.25,
+      "image": "./assets/popsicles/maracuja.png"
+    },
+    {
+      "id": 25,
+      "name": "Menta",
+      "price": 1.25,
+      "image": "./assets/popsicles/menta.png"
+    },
+    {
+      "id": 26,
+      "name": "Milho Verde",
+      "price": 1.25,
+      "image": "./assets/popsicles/milho-verde.png"
+    },
+    {
+      "id": 27,
+      "name": "Mini Saia",
+      "price": 1.25,
+      "image": "./assets/popsicles/mini-saia.png"
+    },
+    {
+      "id": 28,
+      "name": "Morango",
+      "price": 1.25,
+      "image": "./assets/popsicles/morango.png"
+    },
+    {
+      "id": 29,
+      "name": "Ninho",
+      "price": 1.25,
+      "image": "./assets/popsicles/ninho.png"
+    },
+    {
+      "id": 30,
+      "name": "Queijo",
+      "price": 1.25,
+      "image": "./assets/popsicles/queijo.png"
+    },
+    {
+      "id": 31,
+      "name": "Uva",
+      "price": 1.25,
+      "image": "./assets/popsicles/uva.png"
+    }
+  ]
+}
