@@ -75,7 +75,7 @@ fetch("data.json").then((response) => {
 
         <div class="h-full flex flex-col justify-between ">
 
-          <button class="bg-purple-900 w-10 h-10  rounded-full btn-add-to-cart active:bg-purple-700  hover:scale-110"
+        <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 tranform -translate-y-5"
 
             data-name="${item.name}" data-price=${item.price}>
 
@@ -210,7 +210,7 @@ customerName.addEventListener("input", (event) => {
   let inputValue = event.target.value;
   console.log(inputValue);
 
- })
+})
 
 //   if (inputValue !== "") {
 //     address.classList.remove("border-red-500");
