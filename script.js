@@ -6,7 +6,6 @@ const cartItems = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
 const checkoutBtn = document.getElementById("btn-checkout");
 const payment = document.getElementById("payment");
-// const addressError = document.getElementById("address-error");
 const cartCounter = document.getElementById("cart-count");
 
 const waterBaseSection = document.getElementById("water-base-section");
@@ -69,7 +68,7 @@ fetch("data.json").then((response) => {
     data.covers.map((item) => {
       coversSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold text-md md:font-xl  ">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300 " />
 
@@ -94,7 +93,7 @@ fetch("data.json").then((response) => {
     data.specials.map((item) => {
       specialSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold text-md md:font-xl ">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md md:font-xl ">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
 
@@ -118,7 +117,7 @@ fetch("data.json").then((response) => {
     data.water_bases.map((item) => {
       waterBaseSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold text-md md:font-xl ">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md md:font-xl ">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 hover:rounded-full duration-300" />
 
@@ -136,10 +135,6 @@ fetch("data.json").then((response) => {
     })
   })
 })
-
-
-
-
 
 function updateCartModal() {
   cartItems.innerHTML = "";
@@ -212,33 +207,10 @@ customerName.addEventListener("input", (event) => {
 
 })
 
-//   if (inputValue !== "") {
-//     address.classList.remove("border-red-500");
-//     addressError.classList.add("hidden");
-//   }
-
 checkoutBtn.addEventListener("click", () => {
   const isOpen = checkRestaurantAvailability();
 
-  // if (!isOpen) {
-  //   Toastify({
-  //     text: "O restaurate está fechado!",
-  //     duaration: 3000,
-  //     close: true,
-  //     gravity: "top",
-  //     position: "right",
-  //     stopOnFocus: true,
-
-  //     style: {
-  //       background: "#ef4444",
-  //     },
-  //   }).showToast();
-  //   return;
-  // }
-
   if (cart.length === 0) return;
-
-
 
   const cartItems = cart.map((item) => {
     return (
