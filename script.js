@@ -151,15 +151,15 @@ fetch("data.json").then((response) => {
             <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[0]}">140ml</button>
             <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[1]}">1L</button>
         </div>
-        <div class=" flex flex-wrap justify-between m-4 ">
-            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[2]}">5L</button>
-            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[3]}">10L</button>
-          </div>
-      </div>
-      `;
+        </div>
+        `;
     })
   })
 })
+        // <div class=" flex flex-wrap justify-between m-4 ">
+        //     <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[2]}">5L</button>
+        //     <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[3]}">10L</button>
+        //   </div>
 function updateCartModal() {
   cartItems.innerHTML = "";
   let total = 0;
