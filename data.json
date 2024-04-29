@@ -120,19 +120,19 @@
     },
     {
       "id": 12,
-      "name": "Coco",
+      "name": "Côco",
       "price": 1.25,
       "image": "./assets/popsicles/coco.png"
     },
     {
       "id": 13,
-      "name": "Coco com Abacaxi",
+      "name": "Côco com Abacaxi",
       "price": 1.25,
       "image": "./assets/popsicles/coco-abacaxi.png"
     },
     {
       "id": 14,
-      "name": "Coco Queimado",
+      "name": "Côco Queimado",
       "price": 1.25,
       "image": "./assets/popsicles/coco-queimado.png"
     },
@@ -267,7 +267,7 @@
     },
     {
       "id": 6,
-      "name": "Banana Banan com Castanha",
+      "name": "Banana Banana com Castanha",
       "prices": [2.5, 17, 55, 75]
     },
     {
