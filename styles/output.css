@@ -739,9 +739,18 @@ video {
   clear: none;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-2 {
@@ -891,6 +900,10 @@ video {
   width: 2.5rem;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -915,8 +928,20 @@ video {
   width: 100%;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .min-w-\[90\%\] {
   min-width: 90%;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[100\%\] {
+  max-width: 100%;
 }
 
 .flex-shrink {
@@ -1454,6 +1479,10 @@ video {
   gap: 1.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1943,6 +1972,11 @@ video {
   background-color: rgb(88 28 135 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -1957,6 +1991,10 @@ video {
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
@@ -1969,6 +2007,10 @@ video {
 
 .bg-home {
   background-image: url('/assets/bg-rosa.png');
+}
+
+.bg-icecream {
+  background-image: url('/assets/bg-gray.png');
 }
 
 .bg-picole-cobertura {
@@ -2206,6 +2248,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -2219,11 +2266,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -2770,10 +2812,6 @@ body {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:rounded-full:hover {
-  border-radius: 9999px;
 }
 
 .hover\:bg-green-600:hover {

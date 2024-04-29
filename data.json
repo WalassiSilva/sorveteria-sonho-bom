@@ -1,6 +1,6 @@
 {
   "covers": [
-    { 
+    {
       "id": 1,
       "name": "Bombom",
       "price": 2.75,
@@ -50,7 +50,7 @@
       "price": 1.25,
       "image": "./assets/popsicles/uva.png"
     }
-  ], 
+  ],
   "specials": [
     {
       "id": 1,
@@ -64,7 +64,7 @@
       "price": 1.25,
       "image": "./assets/popsicles/abacaxi-suico.png"
     },
-    { 
+    {
       "id": 3,
       "name": "Açaí",
       "price": 1.25,
@@ -237,6 +237,243 @@
       "name": "Uva",
       "price": 1.25,
       "image": "./assets/popsicles/uva.png"
+    }
+  ],
+  "icecreams": [
+    {
+      "id": 1,
+      "name": "Abacaxi",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 2,
+      "name": "Açaí com Banana",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 3,
+      "name": "Amendoim",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 4,
+      "name": "Amor em pedaços",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 5,
+      "name": "Banana",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 6,
+      "name": "Banana Banan com Castanha",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 7,
+      "name": "Baunilha",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 8,
+      "name": "Blue Ice",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+    "id": 9,
+      "name": "Bombom",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 10,
+      "name": "Brigadeira",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 11,
+      "name": "Caramelo salgado",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 12,
+      "name": "Chiclete",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 13,
+      "name": "Chocolate",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 14,
+      "name": "Chocomenta",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 15,
+      "name": "Côco",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 16,
+      "name": "Creme",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 17,
+      "name": "Doce de Leite",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 18,
+      "name": "Ferreiro Rocher",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 19,
+      "name": "Flocos",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 2,
+      "name": "Banana",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 20,
+      "name": "Frutas Tropicais",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 21,
+      "name": "Frutas Vermelhas",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 22,
+      "name": "Iogurte",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 23,
+      "name": "Kinder Ovo",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 24,
+      "name": "Lacta",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 25,
+      "name": "Leite Condensado",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 26,
+      "name": "Leite Condensado Flocado",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 27,
+      "name": "Limão",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 28,
+      "name": "Limão com uva",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 29,
+      "name": "M&M",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 30,
+      "name": "Manga com Côco",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 31,
+      "name": "Maracujá",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 32,
+      "name": "Menta",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 33,
+      "name": "Milho Verde",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 34,
+      "name": "Morango",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 35,
+      "name": "Napolitano",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 36,
+      "name": "Ninho",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 37,
+      "name": "Ninho com Nutela",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 38,
+      "name": "Ninho Trufado",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 39,
+      "name": "Oreo",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 40,
+      "name": "Ovomaltine",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 41,
+      "name": "Passa ao Rum",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 42,
+      "name": "Prestígio",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 43,
+      "name": "Romeo e Julieta",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 44,
+      "name": "Talento",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 45,
+      "name": "Tentação",
+      "prices": [2.5, 17, 55, 75]
+    },
+    {
+      "id": 46,
+      "name": "Uva",
+      "prices": [2.5, 17, 55, 75]
     }
   ]
 }

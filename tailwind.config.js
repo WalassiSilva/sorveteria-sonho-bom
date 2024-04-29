@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         "home": "url('/assets/bg-rosa.png')",
         "picole-cobertura": "url('/assets/bg-blue.png')",
+        "icecream": "url('/assets/bg-gray.png')",
       }
     },
   },

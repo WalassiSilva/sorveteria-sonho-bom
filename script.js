@@ -12,6 +12,7 @@ const waterBaseSection = document.getElementById("water-base-section");
 const specialSection = document.getElementById("special-section");
 const coversSection = document.getElementById("covers-section");
 const customerName = document.getElementById("customer-name");
+const icecreamSection = document.getElementById("icecream-section");
 
 
 let cart = [];
@@ -47,7 +48,7 @@ menu.addEventListener("click", (event) => {
 
 function addToCart(name, price) {
 
-  const existingItem = cart.find(item => item.name === name)
+  const existingItem = cart.find(item => item.name === name && item.price === price);
 
   if (existingItem) {
     existingItem.quantity++;
@@ -136,6 +137,29 @@ fetch("data.json").then((response) => {
   })
 })
 
+// Listar sorvetes
+fetch("data.json").then((response) => {
+  response.json().then((data) => {
+    data.icecreams.map((item) => {
+      icecreamSection.innerHTML += `
+      <div class="flex flex-col items-center bg-white/50 ">
+        <h3 class="font-bold">${item.name}</h3>
+        <div>
+          <img class="w-44 h-48" src="./assets/icecreams/icecream-glass.png" alt=${item.name}
+        </div>
+        <div class=" flex flex-wrap justify-between m-4 ">
+            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[0]}">140ml</button>
+            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[1]}">1L</button>
+        </div>
+        <div class=" flex flex-wrap justify-between m-4 ">
+            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[2]}">5L</button>
+            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[3]}">10L</button>
+          </div>
+      </div>
+      `;
+    })
+  })
+})
 function updateCartModal() {
   cartItems.innerHTML = "";
   let total = 0;
