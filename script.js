@@ -69,7 +69,7 @@ fetch("data.json").then((response) => {
     data.covers.map((item) => {
       coversSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold lg:text-xl text-md">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300 " />
 
@@ -94,7 +94,7 @@ fetch("data.json").then((response) => {
     data.specials.map((item) => {
       specialSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold lg:text-xl text-md md:font-xl ">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
 
@@ -118,7 +118,7 @@ fetch("data.json").then((response) => {
     data.water_bases.map((item) => {
       waterBaseSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold lg:text-xl text-md md:font-xl ">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2  duration-300" />
 
@@ -142,7 +142,7 @@ fetch("data.json").then((response) => {
   response.json().then((data) => {
     data.icecreams.map((item) => {
       icecreamSection.innerHTML += `
-      <div class="flex flex-col items-center bg-white/50 ">
+      <div class="flex flex-col items-center bg-white/50 p-4 gap-2">
         <h3 class="font-bold">${item.name}</h3>
         <div>
           <img class="w-44 h-48" src="./assets/icecreams/icecream-glass.png" alt=${item.name}
