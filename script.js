@@ -70,6 +70,10 @@ function addToCart(name, price) {
 
   updateCartModal();
 }
+console.log(window.innerWidth);
+if (window.innerWidth > 750) {
+
+}
 
 // Listar picoles de cobertura
 fetch("data.json").then((response) => {
@@ -77,7 +81,7 @@ fetch("data.json").then((response) => {
     data.covers.map((item) => {
       coversSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg tranform translate-y-8">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300 " />
 
@@ -102,13 +106,13 @@ fetch("data.json").then((response) => {
     data.specials.map((item) => {
       specialSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg tranform translate-y-8">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
 
         <div class="h-full flex flex-col justify-between ">
 
-          <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 tranform -translate-y-5"
+          <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 transform translate-y-8"
 
             data-name="${item.name}" data-price=${item.price}>
 
@@ -126,7 +130,7 @@ fetch("data.json").then((response) => {
     data.water_bases.map((item) => {
       waterBaseSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg">${item.name}</p>
+        <p class="font-bold lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-8">${item.name}</p>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2  duration-300" />
 
@@ -149,11 +153,15 @@ fetch("data.json").then((response) => {
 fetch("data.json").then((response) => {
   response.json().then((data) => {
     data.icecreams.map((item) => {
-      icecreamSection.innerHTML += `
+
+      if (window.innerWidth < 750) {
+
+
+        icecreamSection.innerHTML += `
       <div class="flex gap-2 p-2 rounded-md justify-between items-center bg-white/50">
         <h3 class="font-semibold">${item.name}</h3>
         <div class="flex gap-2">
-          <button class="btn-add-to-cart w-14 h-10 text-sm shadow-md font-semibold text-white bg-purple-500 hover:bg-pink-600 active:bg-pink-700 rounded-md"
+          <button class="btn-add-to-cart w-14 h-10 text-sm shadow-md font-semibold text-white bg-pink-600 hover:bg-pink-600 active:bg-pink-700 rounded-md"
           data-name="Sorvete: ${item.name}" data-price="${item.prices[0]}"
           >
             140ml
@@ -167,12 +175,9 @@ fetch("data.json").then((response) => {
 
       </div>
         `;
-    })
-  })
-})
-
-
-/*<div class="flex flex-col items-center bg-white/50 py-2 gap-2 rounded-lg">
+      } else {
+        icecreamSection.innerHTML += `
+        <div class="flex flex-col items-center bg-white/50 py-2 gap-2 rounded-lg">
         <h3 class="font-bold">${item.name}</h3>
         <div>
           <img class="w-44 h-48 rounded-lg " src=${item.image} alt=${item.name}
@@ -185,7 +190,15 @@ fetch("data.json").then((response) => {
              data-name="Sorvete: ${item.name}" data-price="${item.prices[1]}">1L</button>
         </div>
 
-        </div> */
+        </div>
+      `;
+      }
+    })
+  })
+})
+
+
+/* */
 
 
 {/* <div class=" flex flex-wrap justify-between m-4 ">
