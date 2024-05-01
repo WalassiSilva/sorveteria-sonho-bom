@@ -107,7 +107,7 @@ fetch("data.json").then((response) => {
     data.specials.map((item) => {
       specialSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <h3 class="font-bold z-40 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-9">${item.name}</h3>
+        <h3 class="font-bold z-40 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-8 lg:translate-y-9">${item.name}</h3>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
 
@@ -131,7 +131,7 @@ fetch("data.json").then((response) => {
     data.water_bases.map((item) => {
       waterBaseSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <h3 class="font-bold z-40 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-9">${item.name}</h3>
+        <h3 class="font-bold z-40 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-8 lg:translate-y-9">${item.name}</h3>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
 
@@ -157,7 +157,7 @@ fetch("data.json").then((response) => {
 
       icecreamSection.innerHTML += `
         <div class="relative flex p-2 gap-2 rounded-md justify-between items-center bg-white/50 md:bg-white/0 md:flex-col md:justify-between md:p-0">
-            <h3 class="font-semibold rounded-lg text-purple-800 md:max-w-[11rem] md:text-center md:absolute md:w-full md:bg-white/70">${item.name}</h3>
+            <h3 class="font-semibold rounded-lg text-purple-900 md:max-w-[11rem] md:text-center md:absolute md:w-full md:bg-white/70">${item.name}</h3>
             <div class="hidden md:block">
               <img class="w-44 h-48 rounded-lg " src=${item.image} alt=${item.name} />
             </div>
@@ -176,7 +176,7 @@ fetch("data.json").then((response) => {
         </div>
       `;
 
-      
+
     })
   })
 })
