@@ -149,24 +149,30 @@ fetch("data.json").then((response) => {
   response.json().then((data) => {
     data.icecreams.map((item) => {
       icecreamSection.innerHTML += `
-      <div class="flex flex-col items-center bg-white/50 p-4 gap-2">
+      <div class="flex flex-col items-center bg-white/50 py-2 gap-2 rounded-lg">
         <h3 class="font-bold">${item.name}</h3>
         <div>
-          <img class="w-44 h-48" src="./assets/icecreams/icecream-glass.png" alt=${item.name}
+          <img class="w-44 h-48 rounded-lg" src=${item.image} alt=${item.name}
+        </div>
+        <div class=" flex flex-wrap justify-between m-4 gap-2">
+            <button class="w-14 h-10 text-sm shadow-md btn-add-to-cart font-semibold text-white bg-purple-900 hover:bg-pink-600 active:bg-pink-700  rounded-md"
+             data-name="Sorvete: ${item.name}" data-price="${item.prices[0]}">140ml</button>
+
+            <button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
+             data-name="Sorvete: ${item.name}" data-price="${item.prices[1]}">1L</button>
         </div>
         <div class=" flex flex-wrap justify-between m-4 ">
-            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[0]}">140ml</button>
-            <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[1]}">1L</button>
-        </div>
+            <button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
+             data-name="Sorvete: ${item.name}" data-price="${item.prices[2]}">5L</button>
+        
+            <button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
+             data-name="Sorvete: ${item.name}" data-price="${item.prices[3]}">10L</button>
+          </div>
         </div>
         `;
     })
   })
 })
-        // <div class=" flex flex-wrap justify-between m-4 ">
-        //     <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[2]}">5L</button>
-        //     <button class="shadow-md btn-add-to-cart bg-red-300 w-14 h-10" data-name="Sorvete: ${item.name}" data-price="${item.prices[3]}">10L</button>
-        //   </div>
 function updateCartModal() {
   cartItems.innerHTML = "";
   let total = 0;
