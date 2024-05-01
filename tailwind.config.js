@@ -11,6 +11,7 @@ module.exports = {
         "home": "url('/assets/bg-rosa.png')",
         "picole-cobertura": "url('/assets/bg-blue.png')",
         "icecream": "url('/assets/bg-gray.png')",
+        "icecrust": "url('/assets/bg-casquinha.png')",
       }
     },
   },

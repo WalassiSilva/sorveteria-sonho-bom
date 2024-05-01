@@ -67,6 +67,7 @@ function addToCart(name, price) {
       quantity: 1,
     });
   }
+
   updateCartModal();
 }
 
@@ -149,10 +150,32 @@ fetch("data.json").then((response) => {
   response.json().then((data) => {
     data.icecreams.map((item) => {
       icecreamSection.innerHTML += `
-      <div class="flex flex-col items-center bg-white/50 py-2 gap-2 rounded-lg">
+      <div class="flex gap-2 p-2 rounded-md justify-between items-center bg-white/50">
+        <h3 class="font-semibold">${item.name}</h3>
+        <div class="flex gap-2">
+          <button class="btn-add-to-cart w-14 h-10 text-sm shadow-md font-semibold text-white bg-purple-500 hover:bg-pink-600 active:bg-pink-700 rounded-md"
+          data-name="Sorvete: ${item.name}" data-price="${item.prices[0]}"
+          >
+            140ml
+          </button>
+
+          <button class="w-14 h-10 text-sm shadow-md btn-add-to-cart font-semibold text-white bg-purple-900 hover:bg-pink-600 active:bg-pink-700 rounded-md"
+              data-name="Sorvete: ${item.name}" 
+              data-price="${item.prices[1]}">1L</button>
+        </div>
+
+
+      </div>
+        `;
+    })
+  })
+})
+
+
+/*<div class="flex flex-col items-center bg-white/50 py-2 gap-2 rounded-lg">
         <h3 class="font-bold">${item.name}</h3>
         <div>
-          <img class="w-44 h-48 rounded-lg" src=${item.image} alt=${item.name}
+          <img class="w-44 h-48 rounded-lg " src=${item.image} alt=${item.name}
         </div>
         <div class=" flex flex-wrap justify-between m-4 gap-2">
             <button class="w-14 h-10 text-sm shadow-md btn-add-to-cart font-semibold text-white bg-purple-900 hover:bg-pink-600 active:bg-pink-700  rounded-md"
@@ -161,18 +184,17 @@ fetch("data.json").then((response) => {
             <button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
              data-name="Sorvete: ${item.name}" data-price="${item.prices[1]}">1L</button>
         </div>
-        <div class=" flex flex-wrap justify-between m-4 ">
-            <button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
-             data-name="Sorvete: ${item.name}" data-price="${item.prices[2]}">5L</button>
-        
-            <button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
-             data-name="Sorvete: ${item.name}" data-price="${item.prices[3]}">10L</button>
-          </div>
-        </div>
-        `;
-    })
-  })
-})
+
+        </div> */
+
+
+{/* <div class=" flex flex-wrap justify-between m-4 ">
+<button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
+ data-name="Sorvete: ${item.name}" data-price="${item.prices[2]}">5L</button>
+
+<button class="shadow-md btn-add-to-cart w-14 h-10 font-semibold text-white bg-purple-900  hover:bg-pink-600 active:bg-pink-700 rounded-md"
+ data-name="Sorvete: ${item.name}" data-price="${item.prices[3]}">10L</button>
+</div> */}
 function updateCartModal() {
   cartItems.innerHTML = "";
   let total = 0;
@@ -204,7 +226,8 @@ function updateCartModal() {
     currency: "BRL",
   });
 
-  cartCounter.innerText = cart.length;
+  // cartCounter.innerText = cart.length;
+  cartCounter.innerText = cart.reduce((acc, item) => acc + item.quantity, 0);
 }
 
 // Remover do carrinho

@@ -4,7 +4,8 @@
       "id": 1,
       "name": "Bombom",
       "price": 2.75,
-      "image": "./assets/popsicles/bombom.jpeg"
+      "image": "./assets/popsicles/bombom.jpeg",
+      "bg_color": "bg-blue-500"
     },
     {
       "id": 2,
@@ -272,7 +273,7 @@
     },
     {
       "id": 6,
-      "name": "Banana Banana com Castanha",
+      "name": "Banana com Castanha",
       "prices": [2.5, 17, 55, 75],
       "image": "./assets/icecreams/banana-castanha.png"
     },
