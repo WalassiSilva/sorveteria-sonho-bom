@@ -13,9 +13,16 @@ const specialSection = document.getElementById("special-section");
 const coversSection = document.getElementById("covers-section");
 const customerName = document.getElementById("customer-name");
 const icecreamSection = document.getElementById("icecream-section");
+const dropdownList = document.getElementById("dropdown-list");
 
 
 let cart = [];
+
+// Mostrar dropdown
+dropdownList.addEventListener("click", () => {
+  dropdownList.classList.toggle("group");
+  console.log("oi");
+})
 
 // Abrir modal 
 cartBtn.addEventListener("click", () => {
@@ -75,7 +82,7 @@ fetch("data.json").then((response) => {
 
         <div class="h-full flex flex-col justify-between ">
 
-        <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 tranform -translate-y-5"
+        <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 tranform -translate-y-5 z-10"
 
             data-name="${item.name}" data-price=${item.price}>
 

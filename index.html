@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="!scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -27,13 +27,31 @@
   <link rel="stylesheet" href="./styles/output.css" />
 </head>
 
-<body class="relative">
+<body class="relative ">
+
+
   <!-- HEADER -->
-  <header class="w-full  h-[420px] bg-zinc-900 bg-home bg-center bg-contain">
+  <header class="w-full mt-12 pt-1 bg-home bg-center bg-contain">
+    <nav class="w-full h-12 block fixed top-0 x-99 text-white bg-gradient-to-r from-fuchsia-400 via-rose-900 to-purple-900 z-20">
+      <ul class="flex gap-2 justify-between px-4">
+        <li id="dropdown-list" class="py-2 w-36">
+          <p class="py-2 cursor-pointer items-start">Picolés <i class="fa-solid fa-chevron-down"></i></p>
+          <ul class="text-white rounded-lg py-2 mt-2 hidden group-hover:block  bg-gradient-to-r from-fuchsia-400 via-rose-900 to-purple-900">
+            <li><a href="#covers" class="block px-4 py-2">Com Cobertura</a></li>
+            <li><a href="#especials" class="block px-4 py-2">Especiais</a></li>
+            <li><a href="#water-bases" class="block px-4 py-2">A base de água</a>
+            </li>
+          </ul>
+        </li>
+        <li class="pt-4"><a href="#icecreams" class="py-2">Sorvetes</a></li>
+        <li class="pt-4"><a href="#acais" class="py-2">Açais</a></li>
+      </ul>
+    </nav>
     <div class="w-full h-full flex flex-col justify-center items-center">
       <img src="./assets/logo-neon.jpg" alt="Logo DevBunger"
         class=" w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
-      <h1 class="font-cursive text-pink-600 bg-white/30 rounded-lg px-4 py-2 text-4xl mt-4 mb-2 font-bold text-center">Sorvetes Sonho
+      <h1 class="font-cursive text-pink-600 bg-white/30 rounded-lg px-4 py-2 text-4xl mt-4 mb-2 font-bold text-center">
+        Sorvetes Sonho
         Bom</h1>
       <span class="text-pink-600 font-bold bg-white/30 rounded-lg px-4 py-2">Rua um, 164 - Serra Azul</span>
 
@@ -46,18 +64,19 @@
   <div id="menu">
 
     <!-- PICOLES COBERTURA -->
-    <section>
+    <section id="covers">
       <div class="bg-picole-cobertura w-full">
-        <h2 class="bg-white/30 font-cursive text-3xl md:text-3xl font-bold text-center pt-9 pb-2">Picolés de Cobertura</h2>
+        <h2 class="bg-white/30 font-cursive text-3xl md:text-3xl font-bold text-center pt-12 pb-2">Picolés de Cobertura
+        </h2>
         <h3 class="bg-white/30  text-xl md:text-2xl font-bold text-center pb-6">R$ 2,75</h3>
       </div>
       <div id="covers-section"
         class="bg-picole-cobertura grid grid-cols-2 md:grid-cols-4 md:gap-10 lg:grid-cols-5 gap-7  px-2 pb-16"></div>
     </section>
     <!-- PICOLES ESPECIAIS -->
-    <section>
+    <section id="especials">
       <div class="bg-picole-cobertura w-full">
-        <h2 class="bg-white/30 font-cursive text-2xl md:text-3xl font-bold text-center pt-9 pb-2">Picolés Especiais</h2>
+        <h2 class="bg-white/30 font-cursive text-2xl md:text-3xl font-bold text-center pt-12 pb-2">Picolés Especiais</h2>
         <h3 class="bg-white/30 text-xl md:text-2xl font-bold text-center pb-6">R$ 1,25</h3>
       </div>
       <div id="special-section"
@@ -65,9 +84,10 @@
     </section>
 
     <!-- PICOLES A BASE DE AGUA -->
-    <section>
+    <section id="water-bases">
       <div class="bg-picole-cobertura w-full">
-        <h2 class="bg-white/30 font-cursive text-2xl md:text-3xl font-bold text-center pt-9 pb-2">Picolés a base de água</h2>
+        <h2 class="bg-white/30 font-cursive text-2xl md:text-3xl font-bold text-center pt-12 pb-2">Picolés a base de água
+        </h2>
         <h3 class="bg-white/30 text-xl md:text-2xl font-bold text-center pb-6">R$ 1,25</h3>
       </div>
       <div id="water-base-section"
@@ -76,9 +96,9 @@
 
     <!-- SORVETES -->
 
-    <section>
+    <section id="icecreams">
       <div class="bg-icecream bg-white/30">
-        <h2 class="bg-white/30 font-cursive text-2xl md:text-3xl font-bold text-center pt-9 pb-2">Sorvetes</h2>
+        <h2 class="bg-white/30 font-cursive text-2xl md:text-3xl font-bold text-center pt-12 pb-2">Sorvetes</h2>
         <h3 class="bg-white/30 text-xl md:text-2xl font-bold text-center ">140,00ml: R$2,50 - 1L: R$17,00</h3>
         <!-- <h3 class="bg-white/30 text-xl md:text-2xl font-bold text-center ">140,00ml: R$2,50 - 1L: R$17,00 - 5L: R$55 - 10L: R$75,00</h3> -->
       </div>
@@ -89,7 +109,7 @@
     </section>
 
     <!-- AÇAÍS -->
-    <section></section>
+    <section id="acais"></section>
 
   </div>
   </div>
@@ -128,8 +148,8 @@
   </div>
 
   <!-- CART -->
-  <section class="fixed right-5 top-5 ">
-    <div class="flex items-center justify-center p-5 z-40 bg-purple-900 shadow-lg rounded-l-full rounded-br-full ">
+  <section class="fixed right-5 top-16 ">
+    <div class="flex items-center justify-center p-5 z-40 bg-purple-900/70 shadow-lg rounded-l-full rounded-br-full ">
 
       <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
         <span id="cart-count"> 0 </span>
@@ -137,7 +157,7 @@
       </button>
     </div>
   </section>
-<!-- FOOTER -->
+  <!-- FOOTER -->
   <footer>
     <div class="bg-zinc-100 text-[#424242] p-2 text-center font-semibold">
       <a href="https://www.instagram.com/sorvetes_sonho_bom?utm_source=qr&igsh=MTA4bTlqNzdlY3h5eQ%3D%3D"
