@@ -12,6 +12,7 @@ module.exports = {
         "picole-cobertura": "url('/assets/bg-blue.png')",
         "icecream": "url('/assets/bg-gray.png')",
         "icecrust": "url('/assets/bg-casquinha.png')",
+        "acai": "url('/assets/bg-acai.jpg')",
       }
     },
   },

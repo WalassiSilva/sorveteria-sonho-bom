@@ -14,7 +14,7 @@ const coversSection = document.getElementById("covers-section");
 const customerName = document.getElementById("customer-name");
 const icecreamSection = document.getElementById("icecream-section");
 const dropdownList = document.getElementById("dropdown-list");
-let windowWidth;
+const acaiBtn = document.getElementById("acai-btn");
 
 
 let cart = [];
@@ -150,7 +150,7 @@ fetch("data.json").then((response) => {
 // Listar sorvetes
 fetch("data.json").then((response) => {
   response.json().then((data) => {
-    let colors= [] ;
+    let colors = [];
     data.icecreams.map((item, i) => {
       colors.push(item.bg_color);
 
@@ -182,7 +182,14 @@ fetch("data.json").then((response) => {
   })
 })
 
+acaiBtn.innerHTML = `
+  <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 tranform -translate-y-5 z-10"
 
+            data-name="Creme Açaí" data-price="20">
+
+            <i class="fa fa-cart-plus text-white"></i>
+          </button>
+`;
 function updateCartModal() {
   cartItems.innerHTML = "";
   let total = 0;
