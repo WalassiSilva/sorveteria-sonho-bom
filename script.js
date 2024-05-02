@@ -71,10 +71,7 @@ function addToCart(name, price) {
 
   updateCartModal();
 }
-console.log(window.innerWidth);
-if (window.innerWidth > 750) {
 
-}
 
 // Listar picoles de cobertura
 fetch("data.json").then((response) => {
@@ -153,10 +150,14 @@ fetch("data.json").then((response) => {
 // Listar sorvetes
 fetch("data.json").then((response) => {
   response.json().then((data) => {
-    data.icecreams.map((item) => {
+    let colors= [] ;
+    data.icecreams.map((item, i) => {
+      colors.push(item.bg_color);
 
       icecreamSection.innerHTML += `
-        <div class="relative flex p-2 gap-2 rounded-md justify-between items-center bg-white/50 md:bg-white/0 md:flex-col md:justify-between md:p-0">
+        <div class="relative flex p-2 gap-2 rounded-md justify-between items-center bg-white/50 md:bg-white/0 md:flex-col md:justify-between md:p-0"
+            style={{backgroundColor:${colors[i]}}}>
+
             <h3 class="font-semibold rounded-lg text-purple-900 md:max-w-[11rem] md:text-center md:absolute md:w-full md:bg-white/70">${item.name}</h3>
             <div class="hidden md:block">
               <img class="w-44 h-48 rounded-lg " src=${item.image} alt=${item.name} />

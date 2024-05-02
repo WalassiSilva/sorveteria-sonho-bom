@@ -4,8 +4,7 @@
       "id": 1,
       "name": "Bombom",
       "price": 2.75,
-      "image": "./assets/popsicles/bombom.jpeg",
-      "bg_color": "bg-blue-500"
+      "image": "./assets/popsicles/bombom.jpeg"
     },
     {
       "id": 2,
@@ -245,283 +244,330 @@
       "id": 1,
       "name": "Abacaxi",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/abacaxi.png"
+      "image": "./assets/icecreams/abacaxi.png",
+      "bg_color": "#f3f3f3"
     },
     {
       "id": 2,
       "name": "Açaí com Banana",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/acai-banana.png"
+      "image": "./assets/icecreams/acai-banana.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 3,
       "name": "Amendoim",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/amendoim.png"
+      "image": "./assets/icecreams/amendoim.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 4,
       "name": "Amor em pedaços",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/amor-em-pedacos.png"
+      "image": "./assets/icecreams/amor-em-pedacos.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 5,
       "name": "Banana",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/banana.png"
+      "image": "./assets/icecreams/banana.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 6,
       "name": "Banana com Castanha",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/banana-castanha.png"
+      "image": "./assets/icecreams/banana-castanha.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 7,
       "name": "Baunilha",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/baunilha.png"
+      "image": "./assets/icecreams/baunilha.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 8,
       "name": "Blue Ice",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/blueice.png"
+      "image": "./assets/icecreams/blueice.png",
+      "bg_color": "#f3f"
     },
     {
     "id": 9,
       "name": "Bombom",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/bombom.png"
+      "image": "./assets/icecreams/bombom.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 10,
       "name": "Brigadeiro",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/brigadeiro.png"
+      "image": "./assets/icecreams/brigadeiro.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 11,
       "name": "Caramelo salgado",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/caramelo-salgado.png"
+      "image": "./assets/icecreams/caramelo-salgado.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 12,
       "name": "Chiclete",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/chiclete.png"
+      "image": "./assets/icecreams/chiclete.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 13,
       "name": "Chocolate",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/chocolate.png"
+      "image": "./assets/icecreams/chocolate.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 14,
       "name": "Chocomenta",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/chocomenta.png"
+      "image": "./assets/icecreams/chocomenta.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 15,
       "name": "Côco",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/coco.png"
+      "image": "./assets/icecreams/coco.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 16,
       "name": "Creme",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/creme.png"
+      "image": "./assets/icecreams/creme.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 17,
       "name": "Doce de Leite",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/doce-de-leite.png"
+      "image": "./assets/icecreams/doce-de-leite.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 18,
       "name": "Ferrero Rocher",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/ferrero-rocher.png"
+      "image": "./assets/icecreams/ferrero-rocher.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 19,
       "name": "Flocos",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/flocos.png"
+      "image": "./assets/icecreams/flocos.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 2,
       "name": "Banana",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/banana.png"
+      "image": "./assets/icecreams/banana.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 20,
       "name": "Frutas Tropicais",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/frutas-tropicais.png"
+      "image": "./assets/icecreams/frutas-tropicais.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 21,
       "name": "Frutas Vermelhas",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/frutas-vermelhas.png"
+      "image": "./assets/icecreams/frutas-vermelhas.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 22,
       "name": "Iogurte",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/iogurte.png"
+      "image": "./assets/icecreams/iogurte.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 23,
       "name": "Kinder Ovo",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/kinder-ovo.png"
+      "image": "./assets/icecreams/kinder-ovo.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 24,
       "name": "Lacta",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/lacta.png"
+      "image": "./assets/icecreams/lacta.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 25,
       "name": "Leite Condensado",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/leite-condensado.png"
+      "image": "./assets/icecreams/leite-condensado.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 26,
       "name": "Leite Condensado Flocado",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/leite-condensado-flocado.png"
+      "image": "./assets/icecreams/leite-condensado-flocado.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 27,
       "name": "Limão",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/limao.png"
+      "image": "./assets/icecreams/limao.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 28,
       "name": "Limão com uva",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/limao-com-uva.png"
+      "image": "./assets/icecreams/limao-com-uva.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 29,
       "name": "M&M",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/m-m.png"
+      "image": "./assets/icecreams/m-m.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 30,
       "name": "Manga com Côco",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/manga-com-coco.png"
+      "image": "./assets/icecreams/manga-com-coco.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 31,
       "name": "Maracujá",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/maracuja.png"
+      "image": "./assets/icecreams/maracuja.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 32,
       "name": "Menta",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/menta.png"
+      "image": "./assets/icecreams/menta.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 33,
       "name": "Milho Verde",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/milho-verde.png"
+      "image": "./assets/icecreams/milho-verde.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 34,
       "name": "Morango",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/morango.png"
+      "image": "./assets/icecreams/morango.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 35,
       "name": "Napolitano",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/napolitano.png"
+      "image": "./assets/icecreams/napolitano.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 36,
       "name": "Ninho",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/ninho.png"
+      "image": "./assets/icecreams/ninho.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 37,
       "name": "Ninho com Nutella",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/ninho-nutella.png"
+      "image": "./assets/icecreams/ninho-nutella.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 38,
       "name": "Ninho Trufado",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/ninho-trufado.png"
+      "image": "./assets/icecreams/ninho-trufado.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 39,
       "name": "Oreo",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/oreo.png"
+      "image": "./assets/icecreams/oreo.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 40,
       "name": "Ovomaltine",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/ovomaltine.png"
+      "image": "./assets/icecreams/ovomaltine.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 41,
       "name": "Passas ao Rum",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/passas-ao-rum.png"
+      "image": "./assets/icecreams/passas-ao-rum.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 42,
       "name": "Prestígio",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/prestigio.png"
+      "image": "./assets/icecreams/prestigio.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 43,
       "name": "Romeu e Julieta",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/romeu-e-julieta.png"
+      "image": "./assets/icecreams/romeu-e-julieta.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 44,
       "name": "Talento",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/talento.png"
+      "image": "./assets/icecreams/talento.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 45,
       "name": "Tentação",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/tentacao.png"
+      "image": "./assets/icecreams/tentacao.png",
+      "bg_color": "#f3f"
     },
     {
       "id": 46,
       "name": "Uva",
       "prices": [2.5, 17, 55, 75],
-      "image": "./assets/icecreams/uva.png"
+      "image": "./assets/icecreams/uva.png",
+      "bg_color": "#f3f"
     }
   ]
 }
