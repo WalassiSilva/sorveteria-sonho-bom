@@ -79,15 +79,17 @@ fetch("data.json").then((response) => {
     data.covers.map((item) => {
       coversSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <h3 class="font-bold z-40 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-8 lg:translate-y-9">${item.name}</h3>
+        <div class="relative">
+        <h3 class="font-bold z-10 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg absolute">${item.name}</h3>
         <img src=${item.image} alt=${item.name}
-          class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300 " />
+          class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
+        </div>
 
         <div class="h-full flex flex-col justify-between ">
 
         <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 tranform -translate-y-5 z-10"
 
-            data-name="${item.name}" data-price=${item.price}>
+            data-name="Picolé: ${item.name}" data-price=${item.price}>
 
             <i class="fa fa-cart-plus text-white"></i>
           </button>
@@ -104,15 +106,17 @@ fetch("data.json").then((response) => {
     data.specials.map((item) => {
       specialSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <h3 class="font-bold z-40 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-8 lg:translate-y-9">${item.name}</h3>
+        <div class="relative">
+        <h3 class="font-bold z-10 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg absolute">${item.name}</h3>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
+        </div>
 
         <div class="h-full flex flex-col justify-between ">
 
           <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 transform -translate-y-5"
 
-            data-name="${item.name}" data-price=${item.price}>
+            data-name="Picolé: ${item.name}" data-price=${item.price}>
 
             <i class="fa fa-cart-plus text-white"></i>
           </button>
@@ -128,15 +132,17 @@ fetch("data.json").then((response) => {
     data.water_bases.map((item) => {
       waterBaseSection.innerHTML += `
         <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
-        <h3 class="font-bold z-40 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg transform translate-y-8 lg:translate-y-9">${item.name}</h3>
+        <div class="relative">
+        <h3 class="font-bold z-10 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg absolute">${item.name}</h3>
         <img src=${item.image} alt=${item.name}
           class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
+        </div>
 
         <div class="h-full flex flex-col justify-between ">
 
           <button class="bg-purple-900 w-10 h-10 rounded-full btn-add-to-cart active:bg-purple-700 hover:scale-110 transform -translate-y-5"
 
-            data-name="${item.name}" data-price=${item.price}>
+            data-name="Picolé: ${item.name}" data-price=${item.price}>
 
             <i class="fa fa-cart-plus text-white"></i>
           </button>
@@ -155,13 +161,12 @@ fetch("data.json").then((response) => {
       colors.push(item.bg_color);
 
       icecreamSection.innerHTML += `
-        <div class="relative flex p-2 gap-2 rounded-md justify-between items-center bg-white/50 md:bg-white/0 md:flex-col md:justify-between md:p-0"
-            style={{backgroundColor:${colors[i]}}}>
-
-            <h3 class="font-semibold rounded-lg text-purple-900 md:max-w-[11rem] md:text-center md:absolute md:w-full md:bg-white/70">${item.name}</h3>
-            <div class="hidden md:block">
-              <img class="w-44 h-48 rounded-lg " src=${item.image} alt=${item.name} />
-            </div>
+      <div class="flex flex-col items-center justify-center gap-2 py-2 rounded-lg">
+      <div class="relative">
+        <h3 class="font-bold z-10 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg absolute">${item.name}</h3>
+        <img src=${item.image} alt=${item.name}
+          class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
+        </div>
 
             <div class="flex gap-2 md:justify-between md:m-2 md:my-0">
               <button class="btn-add-to-cart w-14 h-10 text-sm shadow-md font-semibold text-white bg-pink-800 hover:bg-pink-600 active:bg-purple-700 rounded-md transform hover:scale-105"  
@@ -206,7 +211,7 @@ function updateCartModal() {
         <p class="font-medium mt-2">R$ ${item.price.toFixed(2)}</p>    
       </div>
 
-      <button class="btn-remove-item" data-name="${item.name}">Remover</button>
+      <button class="btn-remove-item" data-name="Picolé: ${item.name}">Remover</button>
 
     </div>
     `
