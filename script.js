@@ -22,7 +22,6 @@ let cart = [];
 // Mostrar dropdown
 dropdownList.addEventListener("click", () => {
   dropdownList.classList.toggle("group");
-  console.log("oi");
 })
 
 // Abrir modal 
@@ -211,7 +210,7 @@ function updateCartModal() {
         <p class="font-medium mt-2">R$ ${item.price.toFixed(2)}</p>    
       </div>
 
-      <button class="btn-remove-item" data-name="Picolé: ${item.name}">Remover</button>
+      <button class="btn-remove-item" data-name="${item.name}">Remover</button>
 
     </div>
     `
@@ -234,6 +233,7 @@ function updateCartModal() {
 cartItems.addEventListener("click", (event) => {
   if (event.target.classList.contains("btn-remove-item")) {
     const name = event.target.getAttribute("data-name");
+    
 
     removeItemCart(name);
   }
