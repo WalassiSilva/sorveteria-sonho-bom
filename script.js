@@ -81,7 +81,7 @@ fetch("data.json").then((response) => {
         <div class="relative">
         <h3 class="font-bold z-10 lg:text-xl text-md text-purple-800 bg-white/70 w-full max-w-[11rem] text-center rounded-lg absolute">${item.name}</h3>
         <img src=${item.image} alt=${item.name}
-          class="w-44 h-48 rounded-lg hover:scale-110 hover:-rotate-2 duration-300" />
+          class="w-44 h-64 rounded-lg hover:scale-110 hover:-rotate-2 duration-300 object-cover" />
         </div>
 
         <div class="h-full flex flex-col justify-between ">
